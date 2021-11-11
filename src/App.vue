@@ -2,96 +2,126 @@
   <div id="app">
     <SiteHeader/>
     <!-- /#header -->
-    <main id="site_main">
-      
-      <section> 
-        <div class="container">
-          <h1>CONTENT GOES HERE</h1>
-        </div>
-      </section>
-      <div class="shop-comics">
-        <div class="container">
-          <div class="row">
-            <div class="card">
-                <img src="./assets/img/buy-comics-digital-comics.png" alt="">
-                <span>DIGITAL COMICS</span>
-              
+    <SiteMain/>
+    <!-- /#main -->
+    <footer id="site_footer">
+      <div class="container">
+        <div class="row">
+          <div class="container-link">
+            <div class="col">
+              <h3>DC COMICS</h3>
+              <div class="footer-link-list">
+                <ul>
+                  <li><a href="">Characters</a></li>
+                  <li><a href="">Comics</a></li>
+                  <li><a href="">Movies</a></li>
+                  <li><a href="">TV</a></li>
+                  <li><a href="">Games</a></li>
+                  <li><a href="">Videos</a></li>
+                  <li><a href="">News</a></li>
+                </ul>
+              </div>
+              <h3>SHOP</h3>
+              <div class="footer-link-list">
+                <ul>
+                  <li><a href="">Shop DC</a></li>
+                  <li><a href="">Shop DC Collectibles</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="card">
-              <img src="./assets/img/buy-comics-merchandise.png" alt="">
-              <span>DC MERCHANDISE</span>
+            <div class="col">
+              <h3>DC</h3>
+              <div class="footer-link-list">
+                <ul>
+                  <li><a href="">Term Of Use</a></li>
+                  <li><a href="">Privacy policy (New)</a></li>
+                  <li><a href="">Ad Choices</a></li>
+                  <li><a href="">Advertising</a></li>
+                  <li><a href="">Jobs</a></li>
+                  <li><a href="">Subscriptions</a></li>
+                  <li><a href="">Talent Workshops</a></li>
+                  <li><a href="">CPSC Certificates</a></li>
+                  <li><a href="">Ratings</a></li>
+                  <li><a href="">Shop Help</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="card">
-              <img src="./assets/img/buy-comics-subscriptions.png" alt="">
-              <span>SUBSCRIPTION</span>
-            </div>
-            <div class="card">
-              <img src="./assets/img/buy-comics-shop-locator.png" alt="">
-            <span>COMIC SHOP LOCATOR</span>
-            </div>
-            <div class="card">
-              <img src="./assets/img/buy-dc-power-visa.svg" alt="">
-              <span>DC SHOP LOCATOR</span>
-            </div>
+            <div class="col">
+              <h3>SITES</h3>
+              <div class="footer-link-list">
+                <ul>
+                  <li><a href="">DC</a></li>
+                  <li><a href="">MAD Magazine</a></li>
+                  <li><a href="">DC Kids</a></li>
+                  <li><a href="">DC Universe</a></li>
+                  <li><a href="">DC Power Visa</a></li>
+                </ul>
+              </div>
+              </div>      
           </div>
         </div>
       </div>
-    </main>
-    <!-- /#main -->
-    <footer id="site_footer"></footer>
+    </footer>
     <!-- /#footer -->
   </div>
 </template>
 
 <script>
 import SiteHeader from "./components/SiteHeader.vue";
+import SiteMain from "./components/SiteMain.vue";
 
 export default {
   name: "App",
   components: {
    SiteHeader,
+   SiteMain,
   },
 };
 </script>
 
 <style lang="scss">
 #app{
-  font-family:  Roboto, sans-serif;
-}
+  font-family: "Greta Sans Medium","Greta Sans Regular",Arial,sans-serif;
+
 .container{
   margin: auto;
   max-width: 1200px;
 }
 .row{
   display: flex;
-}
-#site_main{
-  section{
-    height: 100px;
-    background-color: #1C1C1C;
-    color: white;
-  }
-  .shop-comics{
-    background-color: #0282F9;
-    height: 120px;
-           .row{
-             display: flex;
-             justify-content: space-between;
-               align-items: center;
-               height: 120px;
-           
-             .card{
-               display: flex;
-               justify-content: center;
-               align-items: center;
-                color: white;
 
-                img{
-                  height: 50px;
-                  margin: 10px;
-                }
-             }
-           } 
+}
+}
+#site_footer{
+  height: 400px;
+  background-image: url(./assets/img/footer-bg.jpg);
+  .container-link{
+    display: flex;
+    flex-direction: row;
+    .col{
+      width: 170px;
+      h3{
+        color: white;
+      }
+      .footer-link-list{
+        ul{
+          list-style: none;
+          padding: 0;
+          li{
+            margin: 5px 0;
+            a{
+            text-decoration: none;
+            color:#959595;
+            &:hover{
+              color: white;
+            }
+          }
+          }
+
+        }
+      }
+    }
   }
 }
 </style>

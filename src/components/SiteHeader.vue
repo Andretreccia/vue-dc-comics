@@ -1,6 +1,8 @@
 <template>
     <header id="site_header">
-      <div class="logo">
+      <div class="container">
+         <div class="row">
+              <div class="logo">
         <img src="../assets/img/dc-logo.png" alt="">
       </div>
       <nav class="navbar">
@@ -15,6 +17,8 @@
         <a href="">NEWS</a>
         <a href="">SHOP</a>
       </nav>
+         </div>
+      </div>
     </header>
 </template>
 
@@ -25,11 +29,10 @@
 <style lang="scss">
 #site_header{
   height: 100px;
-  display: flex;
+  
   .logo{
     display: flex;
     width: 40%;
-    justify-content: center;
     align-items: center;
     img{
       height: 80px;
@@ -42,7 +45,7 @@
     width: 60%;
    a{
      text-decoration: none;
-     margin: 8px;
+     margin: 5px;
      font-weight: 600;
       line-height: 95px;
      &:hover{
