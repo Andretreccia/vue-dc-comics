@@ -40,14 +40,17 @@
 
   }
   .navbar{
+    height: 100%;
     display: flex;
     align-items: center;
     width: 60%;
    a{
+     height: 100%;
      text-decoration: none;
-     margin: 5px;
+     margin-left: 5px;
      font-weight: 600;
-      line-height: 95px;
+     line-height: 100px;
+     color: #464646;
      &:hover{
        color: #0282F9;
        border-bottom: 5px solid #0282F9;
