@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <SiteHeader/>
-    <!-- /#header -->
+    <!-- /#site_header -->
     <SiteMain/>
-    <!-- /#main -->
+    <!-- /#site_main -->
+    <ShopSection/>
+    <!-- /#shop_section -->
     <SiteFooter/>
-    <!-- /#footer -->
+    <!-- /#site_footer -->
   </div>
 </template>
 
 <script>
 import SiteHeader from "./components/SiteHeader.vue";
 import SiteMain from "./components/SiteMain.vue";
+import ShopSection from "./components/ShopSection.vue";
 import SiteFooter from "./components/SiteFooter.vue";
 
 
@@ -20,6 +23,7 @@ export default {
   components: {
    SiteHeader,
    SiteMain,
+   ShopSection,
    SiteFooter,
   },
 };
