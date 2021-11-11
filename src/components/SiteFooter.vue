@@ -89,9 +89,9 @@
 <style lang="scss">
 #site_footer{
   .footer-container{
-    padding: 1rem 0;
+    padding: 30px 0;
     background: url(../assets/img/dc-logo-bg.png) 68% no-repeat, url(../assets/img/footer-bg.jpg) no-repeat;
-    background-size: 550px, cover;
+    background-size: 650px, cover;
 
     .container-link{
       display: flex;
@@ -100,14 +100,15 @@
         width: 170px;
         h3{
           color: white;
+          margin: 20px 0;
         }
         .footer-link-list{
           ul{
             list-style: none;
-            padding: 0;
             li{
-              margin: 5px 0;
+                margin: 5px 0;
               a{
+                font-size: 12px;
               text-decoration: none;
               color:#959595;
               &:hover{
@@ -130,7 +131,9 @@
                 background: #303030;
                 color: white;
                 padding: 12px; 
-                margin: 21px 0;
+                margin: 30px 0;
+                font-size: 18px;
+                cursor: pointer;
         }
         .social{
             display: flex;

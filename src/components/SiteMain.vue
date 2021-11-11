@@ -43,14 +43,15 @@
 <style lang="scss">
 #site_main{
   section{
-    height: 100px;
+    height: 120px;
     background-color: #1C1C1C;
     color: white;
   }
   .shop-comics{
     background-color: #0282F9;
-    height: 120px;
+    height: 150px;
            .row{
+             padding: 0 16px;
              display: flex;
              justify-content: space-between;
                align-items: center;
@@ -61,10 +62,14 @@
                justify-content: center;
                align-items: center;
                 color: white;
+                cursor: pointer;
 
                 img{
                   width: 40px;
                   margin: 10px;
+                }
+                span{
+                  font-size: 15px;
                 }
              }
            } 

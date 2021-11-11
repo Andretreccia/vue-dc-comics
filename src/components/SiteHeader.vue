@@ -28,14 +28,14 @@
 
 <style lang="scss">
 #site_header{
-  height: 100px;
+  height: 120px;
   
   .logo{
     display: flex;
     width: 40%;
     align-items: center;
     img{
-      height: 80px;
+      height: 90px;
     }
 
   }
@@ -45,11 +45,12 @@
     align-items: center;
     width: 60%;
    a{
+     font-size: 14px;
      height: 100%;
      text-decoration: none;
-     margin-left: 5px;
+     margin-left: 20px;
      font-weight: 600;
-     line-height: 100px;
+     line-height: 130px;
      color: #464646;
      &:hover{
        color: #0282F9;

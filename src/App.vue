@@ -38,11 +38,11 @@ export default {
   margin: auto;
   height: 100%;
   max-width: 1200px;
-}
-.row{
+  .row{
   display: flex;
   height: 100%;
 
+  }
 }
 }
 
