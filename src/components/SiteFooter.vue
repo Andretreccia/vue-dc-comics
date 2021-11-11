@@ -65,10 +65,17 @@
          <div class="footer-banner">
            <div class="container">
             <div class="row">
-              <div class="sign-up">
+              
               <button>SIGN-UP NOW!</button>
-            </div>
-          <div class="social"></div>
+            
+          <div class="social">
+                    <a href="">FOLLOW US</a>
+                <img src="../assets/img/footer-facebook.png" alt="">
+                <img src="../assets/img/footer-twitter.png" alt="">
+                <img src="../assets/img/footer-youtube.png" alt="">
+                <img src="../assets/img/footer-pinterest.png" alt="">
+                <img src="../assets/img/footer-periscope.png" alt="">
+          </div>
             </div>
          </div>
          </div>
@@ -116,6 +123,29 @@
   }
   .footer-banner{
     background: #303030;
+    .row{
+        justify-content: space-between;
+        button{
+                border: 2px solid #0282f9;
+                background: #303030;
+                color: white;
+                padding: 12px; 
+                margin: 21px 0;
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            img{
+                margin: 0 10px;
+            }
+            a{
+                text-decoration: none;
+                color: #0282f9;
+                font-weight: 600;
+                margin-right: 5px;
+            }
+        }
+    }
     
   }
 
