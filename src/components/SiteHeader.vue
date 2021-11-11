@@ -1,5 +1,5 @@
 <template>
-    <div id="header">
+    <header id="site_header">
       <div class="logo">
         <img src="../assets/img/dc-logo.png" alt="">
       </div>
@@ -15,7 +15,7 @@
         <a href="">NEWS</a>
         <a href="">SHOP</a>
       </nav>
-    </div>
+    </header>
 </template>
 
 <script>
@@ -23,7 +23,7 @@
 </script>
 
 <style lang="scss">
-#header{
+#site_header{
   height: 100px;
   display: flex;
   .logo{
