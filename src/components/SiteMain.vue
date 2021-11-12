@@ -4,9 +4,11 @@
         <img src="../assets/img/jumbotron.jpg" alt="">
       </div>
       <section> 
-        <div class="container">
-          <div class="row classSeries">
+        <div class="container current-series-container">
+            <button class="current-series-btn">CURRENT SERIES</button>
+          <div class="row current-series">
             <SectionCurrentSeries v-for="currentSerie in currentSeries" :key="currentSerie.serie" :image="currentSerie.thumb" :title="currentSerie.series"/>
+          <button class="load-more">LOAD MORE</button>
           </div>
         </div>
       </section>
@@ -107,18 +109,52 @@ export default{
 
 <style lang="scss">
 #site_main{
-  .jumbotron{
+  .jumbotron img{
     height: 350px;
     width: 100%;
     overflow: hidden;
-      img{
-        width: 100%;
-      }
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+
+      
   }
   section{
-    height: 120px;
     background-color: #1C1C1C;
     color: white;
+    .current-series-container{
+      position: relative;
+      .current-series-btn{
+                border: 2px solid #0282f9;
+                background: #0282f9;
+                color: white;
+                padding: 12px 14px; 
+                margin: 30px 0;
+                font-size: 18px;
+                cursor: pointer;
+                font-weight: 600;
+                position: absolute;
+                top: -55px;
+                left: 0;
+    }
+  .current-series{
+    padding: 20px 0 ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%; 
+      .load-more{
+                border: 2px solid #0282f9;
+                background: #0282f9;
+                color: white;
+                padding: 12px 70px; 
+                margin: 30px 0;
+                font-size: 18px;
+                cursor: pointer;
+                font-weight: 600;
+      }
+  }
+    }
   }
   
 }
