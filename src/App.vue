@@ -4,8 +4,6 @@
     <!-- /#site_header -->
     <SiteMain/>
     <!-- /#site_main -->
-    <ShopSection/>
-    <!-- /#shop_section -->
     <SiteFooter/>
     <!-- /#site_footer -->
   </div>
@@ -14,7 +12,6 @@
 <script>
 import SiteHeader from "./components/SiteHeader.vue";
 import SiteMain from "./components/SiteMain.vue";
-import ShopSection from "./components/ShopSection.vue";
 import SiteFooter from "./components/SiteFooter.vue";
 
 
@@ -22,8 +19,7 @@ export default {
   name: "App",
   components: {
    SiteHeader,
-   SiteMain,
-   ShopSection,
+   SiteMain, 
    SiteFooter,
   },
 };

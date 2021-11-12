@@ -6,11 +6,18 @@
         </div>
       </section>
      
+         <ShopSection/>
+    <!-- /#shop_section -->
     </main>
 </template>
 
 <script>
-
+import ShopSection from "./ShopSection.vue";
+export default{
+  components:{
+    ShopSection,
+  }
+}
 </script>
 
 <style lang="scss">
