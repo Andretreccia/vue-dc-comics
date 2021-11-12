@@ -30,24 +30,11 @@ export default {
 </script>
 
 <style lang="scss">
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
+@import "./assets/scss/common.scss";
+
 #app{
   font-family: "Greta Sans Medium","Greta Sans Regular",Arial,sans-serif;
-
-.container{
-  margin: auto;
-  height: 100%;
-  max-width: 1200px;
-  .row{
-  display: flex;
-  height: 100%;
-
-  }
-}
 }
 
 </style>
