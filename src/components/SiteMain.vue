@@ -28,7 +28,7 @@ export default{
 <style lang="scss">
 #site_main{
   .jumbotron{
-    height: 400px;
+    height: 350px;
     width: 100%;
     overflow: hidden;
       img{
