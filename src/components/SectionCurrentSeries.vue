@@ -1,7 +1,7 @@
 <template>
     <div class="card"> 
         <img class="card-img" :src="image" alt="">
-        <h6 class="card-title">{{title}}</h6>
+        <h6 class="card-title">{{title.toUpperCase()}}</h6>
     </div>
 </template>
 
@@ -18,8 +18,8 @@ export default{
 <style lang="scss">
 .card{
         width: calc(100% /6); 
-        text-align: center;
         margin-top: 2rem;
+        padding: 0 5px;
 
     .card-img{
         height: 160px;
@@ -28,10 +28,10 @@ export default{
         object-position: top;
     }
     .card-title{
-        margin: 10px;
-        font-size: 15px;
+        margin-top: 12px;
+        font-size: 12px;
         color: lightgrey;
-        text-align: start;
+        font-weight: 400;
     }
 }
 

@@ -3,15 +3,15 @@
       <div class="jumbotron">
         <img src="../assets/img/jumbotron.jpg" alt="">
       </div>
-      <section> 
+      <div class="current-series-section"> 
         <div class="container current-series-container">
             <button class="current-series-btn">CURRENT SERIES</button>
-          <div class="row current-series">
+          <div class="row current-series-row">
             <SectionCurrentSeries v-for="currentSerie in currentSeries" :key="currentSerie.serie" :image="currentSerie.thumb" :title="currentSerie.series"/>
           <button class="load-more">LOAD MORE</button>
           </div>
         </div>
-      </section>
+      </div>
      
          <ShopSection/>
     <!-- /#shop_section -->
@@ -110,7 +110,7 @@ export default{
 <style lang="scss">
 #site_main{
   .jumbotron img{
-    height: 350px;
+    height: 400px;
     width: 100%;
     overflow: hidden;
     width: 100%;
@@ -120,7 +120,7 @@ export default{
 
       
   }
-  section{
+  .current-series-section{
     background-color: #1C1C1C;
     color: white;
     .current-series-container{
@@ -129,27 +129,26 @@ export default{
                 border: 2px solid #0282f9;
                 background: #0282f9;
                 color: white;
-                padding: 12px 14px; 
-                margin: 30px 0;
-                font-size: 18px;
+                padding: 12px 16px; 
+                font-size: 16px;
                 cursor: pointer;
                 font-weight: 600;
                 position: absolute;
-                top: -55px;
+                top: -22px;
                 left: 0;
     }
-  .current-series{
-    padding: 20px 0 ;
+  .current-series-row{
+    padding:  30px 0 ;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%; 
       .load-more{
+                margin-top: 50px;
                 border: 2px solid #0282f9;
                 background: #0282f9;
                 color: white;
                 padding: 12px 70px; 
-                margin: 30px 0;
-                font-size: 18px;
+                font-size: 16px;
                 cursor: pointer;
                 font-weight: 600;
       }
