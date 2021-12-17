@@ -32,6 +32,7 @@ export default {
 <style lang="scss">
 
 @import "./assets/scss/common.scss";
+@import "./assets/scss/variables.scss";
 
 #app{
   font-family: "Greta Sans Medium","Greta Sans Regular",Arial,sans-serif;
